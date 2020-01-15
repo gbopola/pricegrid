@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    /* Primary */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    /* Neutral */
+    --light-gray:  hsl(204, 43%, 93%);
+    --grey-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#info-section {
+    margin: 2rem;
+    width: 35%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 2px #888;
+     
+}
+
+.header-section {
+    margin: 2rem;
+    padding: 1.5rem;
+}
+
+.display {
+    margin-bottom: 1rem;
+}
+
+.lead {
+    margin-bottom: 0.5rem;
+}
+
+#bottom-section {
+    background: var(--cyan);
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+}
+
+.price-section {
+    flex: 1;
+    margin: 2rem 0rem 2rem 2rem;
+    padding-right: 0.5rem;
+    
+}
+
+.price-section h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.prices {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price-section .access {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.price-section span {
+    color: var(--light-gray);
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.price-section button {
+    border: none;
+    background: var(--bright-yellow);
+    color: #fff;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 93%;
+    box-shadow: 0px 1px 10px 0px #888;
+}
+
+.about-section {
+    flex: 1;
+    margin: 2rem 2rem 2rem 0rem;
+    padding-left: 2rem;
+}
+
+.about-section h3 {
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.about-section p {
+    color: var(--light-gray);
+    margin-bottom: 0.25rem;
+    opacity: 0.75;
+}
+
+.display {
+    color: var(--cyan);
+}
+
+.lead {
+    color: var(--bright-yellow);
+}
+
+.header-text {
+    color: var(--grey-blue);
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+@media(max-width: 1250px) {
+    #bottom-section {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 800px) {
+    #info-section {
+        width: 300px;
+    }
+    .header-section {
+        margin: 0;
+    }
+}
+ 
